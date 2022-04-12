@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+
+  test:
+    image: nginx:latest
+    ports:
+      - 8081:8081
+    volumes:
+      - ./site:/home
+      - ./conf:/etc/nginx/conf.d
